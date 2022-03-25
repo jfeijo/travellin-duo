@@ -46,7 +46,8 @@ img {
 }
 .logo {
 margin: 5.15rem auto;
-max-width:max-content;
+image-resolution: from-image 300dpi !important;
+
 
 }
 
@@ -88,7 +89,7 @@ z-index:0;
 .avatar{
     position: relative;
 /* margin: 10.7rem 0 0 3.5rem; */
-width: 300px;
+min-width: 350px;
 z-index: 2;
 transform: perspective(800px) rotateY(-15deg);
 transition: transform 1s ease 0s;
@@ -119,7 +120,7 @@ transition: transform 1s ease 0s;
 .img-field{
 
     position: absolute;
-   
+    image-resolution: from-image 300dpi !important;
    
     top: 10px;
    right: -12px;
@@ -253,7 +254,7 @@ h1 strong {
     width: 0;
     height: 0;
     
-    margin: 5rem 0 20px 20px;
+    margin: 5rem 0 20px 10px;
     background: radial-gradient(circle, #FFE072, #FFE072);
     border-radius: 50%;
     transition: 0.3s ease;
