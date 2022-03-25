@@ -478,3 +478,8 @@ h1 strong {
     }
   }
   
+  /* iPhone optimization */
+body{
+  -webkit-appearance: none;
+}
+  
