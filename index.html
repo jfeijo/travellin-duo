@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+    <title>Travellin' Duo</title>
+</head>
+<body>
+<div id="preloader"> <img class="preloader-img" src="./images/labelwhite.png" alt="animated logo"></div>
+<div class="wrapper">
+    <section class="section first_section" >
+      <div id='navigation'>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="#second_section" class="navigation_item">saiba mais</a></li>
+                <li> <a href="#third_section" class="navigation_item">depoimentos</a></li>
+                <li><a href="#fourth_section" class="navigation_item">contato</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+           <img class="logo" src='./images/logo-smallest.png'>
+            <div class="navbar">
+            <!-- <a href="http://youtube.com/travellinduoband" class="navigation_item">saiba mais</a>
+            <a href="./release.html" class="navigation_item">depoimentos</a>
+            <a href="https://api.whatsapp.com/send?phone=5555999985077&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20com%20a%20Travellin'%20Duo!" class="navigation_item">contato</a> -->
+        </div>
+
+            <h1 class='main-text-one'>música para momentos <strong>especiais</strong></h1>
+        <div class='avatar-block'>
+            
+            <div class='square'>
+            <img class='avatar' src='./images/avatar.png'>
+        </div>
+        
+        <img class="spinner" src="./images/labelwhite.png" alt="animated logo">
+        
+        
+            
+        </div>
+    </div>
+    </div>
+    </div>
+        <div class="second-section">
+            <div>
+                <img class="img-field" src="./images/cotton-fields.png" alt="Travellin' Duo em uma apresentação ao ar livre">
+                <h1>blablabla<strong>blabla</strong></h1>
+            </div>
+        </div>
+        
+        <div class="section third_section">
+<!--       
+    <div class='social'>
+        <a href="#"><img class="instagram" src='./images/instagram.png'></img></a>
+        
+    </div> -->
+    <!-- </section>
+    <section id="second-section">
+        
+        <h1 class='main-text-two'><strong>shows</strong> casamentos formaturas bares/pubs</h1>
+        <div class="image-block">
+            <div class='square-two'></div>
+            <img class='sofa' src='./images/sofa.png'>
+  </div>
+      </section> -->
+    <script src="index.js"></script>
+    <script>
+        function preloaderFadeOutInit(){
+$('#preloader').fadeOut('slow');
+
+}
+        
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(() => {
+                loader.style.animation = "fadeOut ease 3s";
+            },3000);
+            setTimeout(() => {
+                loader.style.display = "none";
+            },4200);
+        });
+
+
+    </script>
+    </body>
+</html>
