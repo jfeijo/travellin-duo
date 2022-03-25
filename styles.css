@@ -89,7 +89,7 @@ z-index:0;
 .avatar{
     position: relative;
 /* margin: 10.7rem 0 0 3.5rem; */
-min-width: 350px;
+width: 300px;
 z-index: 2;
 transform: perspective(800px) rotateY(-15deg);
 transition: transform 1s ease 0s;
