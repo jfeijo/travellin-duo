@@ -291,10 +291,10 @@ h1 strong {
       transform: translateY(-1.2rem);
       background: #1D1B1B;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       position: fixed;
       text-align: center;
-      z-index: 100;
+      z-index: 1000;
       transition: ease-out;
      
   }
@@ -354,6 +354,7 @@ h1 strong {
     animation: rotation 4s infinite linear;
     max-width: 180px;
     margin: 35vh auto;
+    z-index: 100000;
   }
 
   @keyframes rotation {
