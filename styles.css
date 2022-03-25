@@ -194,9 +194,9 @@ h1 strong {
   }
   
   #menu-bar {
-    width: 35px;
+    width: 45px;
     height: 40px;
-    margin: 6.1rem 0 20px 42px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
   }
   
@@ -239,22 +239,21 @@ h1 strong {
   }
   
   .nav li a:hover {
-    font-weight: bold;
+    font-weight: 500;
   }
   
   .menu-bg, #menu {
     top: 0;
     left: 0;
     position: absolute;
-    text-align:left;  
+ 
 }
   
   .menu-bg {
     z-index: 1;
     width: 0;
     height: 0;
-    
-    margin: 5rem 0 20px 10px;
+    margin: 30px 0 20px 20px;
     background: radial-gradient(circle, #FFE072, #FFE072);
     border-radius: 50%;
     transition: 0.3s ease;
