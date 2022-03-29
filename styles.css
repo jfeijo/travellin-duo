@@ -1,3 +1,91 @@
+/* desktop CSS */
+@media screen and (min-width: 768px) {
+ body{
+  overflow:unset;
+ } 
+
+ .first-section{
+   
+   background-image:unset;
+   width:-webkit-fill-available;
+   border-radius: 10px;
+ }
+.logo-desktop{
+
+  background: transparent;
+  position: absolute;
+  top: 10%;
+  width: 300px;
+  /* text-align: center; */
+  /* right: 37vw; */
+  bottom: 0;
+  left: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  filter: invert(100%) sepia(4%) saturate(8%) hue-rotate(144deg) brightness(106%) contrast(100%);
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.main-text-one{
+  display: none;
+  
+}
+.main-text-desktop{
+ 
+  background: transparent;
+  position: absolute;
+  top: -20%;
+  width: 26rem;
+  /* text-align: center; */
+  /* right: 37vw; */
+  bottom: 0;
+  left: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-evenly;
+}
+.video-wrapper{
+position: relative;
+}
+.video-wrapper video{
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+  }
+ video {
+   visibility: visible;
+   z-index:0 !important;
+ }
+ #road-video{
+  z-index: 0;
+display:block;
+position: relative;
+border-radius: 20px;
+  right: 0;
+  bottom: 0;
+  width:-webkit-fill-available;
+  color: #000000;
+  color-interpolation-filters:auto;
+  filter: grayscale(1);
+
+}
+
+
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +98,10 @@ body {
     font-family: "Poppins", 'sans-serif';
     overflow-x:hidden;
     overflow-y: unset;
+}
+
+video {
+  display: none;
 }
 
 img {
@@ -28,25 +120,57 @@ img {
 
     text-decoration-color: rgba(252, 236, 236, 0.918);
   }
--webkit-scrollbar-thumb {
-    background-image: linear-gradient(180deg, #414141 0%, #e0af29 99%);
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  
+
+  ::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #030303;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffe072;
+    border: 57px none #ffffff;
     border-radius: 100px;
-}
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #9e9e9e;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #454545;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+
 .section {
     border-radius: 60px;
     position: relative;
   
     height: fit-content;
-    background-color: #1D1B1B;
-    background: url("./images/black-texture.png") ;
-    background-blend-mode: 'darken';
+    background-color: rgb(22, 22, 22);
+    /* background-image: url("./images/black-texture.png") ; */
+    background-blend-mode:lighten;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
  margin: 1rem 14px;
  z-index: 1;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ box-shadow: rgba(0, 0, 0, 0.616) 0px 25px 100px 12px;
 }
 #navigation {
     text-align: center;
@@ -57,7 +181,14 @@ margin: 4rem auto;
 max-width: 118px;
 transform: translate(92px, -3px);
 
-
+}
+@media screen and (max-width: 768px) {
+.logo-desktop{
+  display: none;
+}
+.main-text-desktop{
+  display: none;
+}
 }
 
 .main-text-one {
@@ -74,14 +205,11 @@ font-size: 43px;
 line-height: 40.64px;
 width: 100px;
 z-index:0;
-/* or 37px */
-
-
 color: #FFFFFF;
-
 mix-blend-mode: screen;
 opacity: 0.96;
 }
+
 
 .square {
     position: relative;
@@ -89,7 +217,7 @@ width: 16rem;
 height: 12rem;
 margin: 15.3rem auto 5rem 5.5rem;
 
-background: #FFE072;
+background: rgb(255, 224, 114);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 21px;
 z-index:0;
