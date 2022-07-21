@@ -10,11 +10,13 @@
    width:-webkit-fill-available;
    border-radius: 10px;
  }
+
+
 .logo-desktop{
 
   background: transparent;
   position: absolute;
-  top: 10%;
+  top: 20%;
   width: 15%;
   /* text-align: center; */
   /* right: 37vw; */
@@ -23,7 +25,7 @@
   transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
-  filter: invert(100%) sepia(4%) saturate(8%) hue-rotate(144deg) brightness(106%) contrast(100%);
+  filter: invert(100%) sepia(4%) saturate(8%) hue-rotate(144deg) brightness(106%) contrast(80%);
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -40,7 +42,7 @@
  font-size: 30px;
  color:#FFFFFF; 
  position: absolute;
- top: 40%;
+ top: 45%;
  left: 50%;
  transform: translateX(calc(-50% - 70px));
  display: -webkit-box;
@@ -62,14 +64,34 @@
   display: inline;
 
 }
+.main-text__subtitle{
+  font-weight: 200;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translateX(calc(-50% + 70px));
+  width: 150%;
+  list-style-type: none;
+  font-size: 18px;
+  color: rgb(216, 214, 214);
+}
+.main-text__item{
+  width:fit-content;
+  text-align: unset;
+  display: inline;
+  padding: 20px;
+}
+
 .video-wrapper{
 position: relative;
 }
 .video-wrapper video{
   height: auto;
   vertical-align: middle;
-  width: 100%;
+  width: 100vw;
   z-index: 0;
+  height: 100%;
   }
  video {
    visibility: visible;
@@ -79,7 +101,8 @@ position: relative;
   z-index: 0;
 display:block;
 position: relative;
-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0% 20%);
+/* -webkit-clip-path: polygon(2% 3%, 98% 3%, 96% 96%, 4% 96%);
+clip-path: polygon(2% 3%, 98% 3%, 96% 96%, 4% 96%); */
   right: 0;
   bottom: 0;
   width:-webkit-fill-available;
@@ -158,7 +181,7 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 .logo {
-fill: rgba(255, 255, 255, 0.89);
+fill: rgba(255, 255, 255, 0.767);
 margin: 4rem auto;
 max-width: 118px;
 transform: translate(92px, -3px);
@@ -308,9 +331,27 @@ h1 strong {
     grid-area: texto;
 }
 
+.navbar{
+  padding: 1.5rem 5rem;
+  
+
+  z-index: 400;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
 
-/* HAMBURGER */
+/* HAMBURGER
 #menu {
     z-index: 2;
   }
@@ -340,32 +381,7 @@ h1 strong {
     transform: translateY(4px);
   }
   
-  .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 22px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 2px 0;
-    text-align: left;
-    transform: translateY(3rem) translateX(-5px);
-  }
-  
-  .nav li a {
-    color: #1D1B1B;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover {
-    font-weight: 500;
-  }
+ 
   
   .menu-bg, #menu {
     top: 0;
@@ -408,14 +424,14 @@ h1 strong {
     width: 520px;
     height: 460px;
     transform: translate(-60%,-30%);
-  }
+  } */
 
   /* PRELOADER */
   #preloader {
       transform: translateY(-1.2rem);
       background: #1D1B1B;
-      height: 100vh;
-      width: 100vw;
+      height: 120%;
+      width: 100%;
       position: fixed;
       text-align: center;
       z-index: 1000;
